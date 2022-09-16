@@ -34,20 +34,7 @@ e.Use(middleware.BasicAuthWithConfig(middleware.BasicAuthConfig{}))
 
 ## Configuration
 
-```go
-BasicAuthConfig struct {
-  // Skipper defines a function to skip middleware.
-  Skipper Skipper
-
-  // Validator is a function to validate BasicAuth credentials.
-  // Required.
-  Validator BasicAuthValidator
-
-  // Realm is a string to define realm attribute of BasicAuth.
-  // Default value "Restricted".
-  Realm string
-}
-```
+Configuration is done via the `BasicAuthConfig` struct type. For full details see the [BasicAuthConfig Go Doc](https://pkg.go.dev/github.com/labstack/echo/v4/middleware#BasicAuthConfig).
 
 *Default Configuration*
 
